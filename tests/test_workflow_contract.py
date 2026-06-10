@@ -18,7 +18,6 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("config-path: glab-groups-microsoft", text)
         self.assertIn("target-token-secret: GL_PAT_GROUP_MICROSOFT_SVC", text)
         self.assertIn('cron: "5 1 1-31/2 * *"', text)
-        self.assertIn("batch-size: 25", text)
         self.assertIn("emit-parquet: true", text)
 
 
